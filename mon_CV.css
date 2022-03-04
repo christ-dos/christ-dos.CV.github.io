@@ -1,0 +1,453 @@
+html
+{
+	width: 100%;
+	height: 100%;
+}
+
+*
+{
+	padding: 0;
+	margin: 0;
+	/*border: 2px solid black;*/
+}
+
+/* les polices d'écriture personalisées----------------------------------------*/
+
+@font-face
+{
+	font-family:'Gondola_SD-Swash';
+ 	src:url('polices/gondola_sd-swash-webfont.eot') format('eot'),
+ 	 	url('polices/gondola_sd-swash-webfont.woff') format('woff'),
+ 	 	url('polices/Gondola_SD-Swash.ttf') format('truetype'),
+ 	 	url('polices/gondola_sd-swash-webfont.svg') format('svg');
+
+}
+
+@font-face
+{
+	font-family:'dayrom';
+ 	src:url('polices/dayrom.eot') format('eot'),
+ 	 	url('polices/dayrom.woff') format('woff'),
+ 	 	url('polices/dayrom.ttf') format('truetype'),
+ 	 	url('polices/dayrom.svg') format('svg');
+
+}
+#page
+{	
+	font-family: 'dayrom',senif;
+	margin: auto;
+	width: 80%;
+	text-align: justify;
+	background:url("images/fond_papyrus.jpg") fixed ;
+}
+
+/* header---------------------------------------*/
+
+.photo_cv img
+{
+	border-radius: 100px;
+	border: 3px outset rgb(207,158,207);
+	box-shadow: 3px 3px 4px rgb(207,158,207);
+	height: 177px;
+	margin-top: 5px;
+
+
+}
+.photo_cv
+{
+	margin-left: 80px;
+	margin-right: 80px;
+
+}
+header .nom
+{
+	font-family:'Gondola_SD-Swash', senif;
+	font-size: 1.5em;	
+	text-shadow: 4px 4px 4px rgba(207,158,207,0.8);
+	font-weight: bold;
+	margin-left: 90px;
+}
+header h1, header h2
+{
+	height: 80px;
+	padding-bottom: 5px;
+
+}
+header h2
+{
+	padding-top: 25px;
+	padding-bottom: 0px;
+	font-size: 1.7em;
+	margin-top: 10px;
+	height: 70px;
+}
+header h1
+{
+	margin-top: 20px;
+	display: block;
+
+}
+header
+{	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin: 5px 5px 0px 5px;
+	background: url("images/separateur.png")repeat-x bottom ,
+				url("images/separateur.png")repeat-x top ,
+				url("images/separateur_vertical.png")repeat-y right ,
+				url("images/separateur_vertical.png")repeat-y left ;
+	height: 190px;
+	box-shadow: 3px 2px 3px rgb(185,122,87);
+	border-radius: 10px;
+	background-color: rgba(255,255,255,0.7);
+}
+
+/* section partie gauche du CV------------------------------------------*/
+li
+{
+	margin-bottom: 15px;
+	list-style: none;
+}
+section
+{
+	display: flex;
+	text-align: justify;
+}
+section .titre
+{
+	display: none;
+}
+/* mise en page de aside------------------------------------------------*/
+aside .titre_N1
+{
+	font-family:'Gondola_SD-Swash',senif;	
+	text-shadow: 2px 2px 4px rgb(185,185,185);
+}
+aside
+{	
+	border: 3px solid rgba(202,156,205,0.5);
+	border-radius: 10px;
+	padding:15px;
+	max-width: 30%;
+	margin: auto;
+	margin: 5px 5px 5px 5px;
+	background: url("images/degrade_kikine_petit.png")repeat-y;
+ 	color:rgb(238,238,238);
+	text-align: center;
+	box-shadow: 3px 2px 3px rgb(202,156,205);
+	font-size: 1.1em;
+}
+aside p
+{
+	padding: 5px 0px 5px 0px;
+	text-align: justify;
+	margin-left: 30px;
+}
+aside .titre_N1
+{
+	padding: 10px 0px 10px 0px;
+	text-align: center;
+	margin-left: 0px;
+	font-size: 1.8em;
+}
+#description p
+{
+	text-align: left;
+}
+#contact img
+{
+	margin-right: 15px; 
+}
+#contact .email, #contact .telephone
+{
+	word-wrap: break-word;
+}
+.descript1
+{
+	text-align: center;
+	margin-left: 0px;
+}
+.tirets
+{
+	text-align: center;
+}
+.email a,.telephone strong
+{
+	color:rgb(0,0,0);
+	text-decoration: none;
+	background:url("images/greyzz.png") repeat ;
+	border-radius: 15px;
+	box-shadow:3px  3px 5px rgb(0,0,0);
+	text-shadow: 2px 2px 3px rgb(207,158,207);
+	padding: 6px ;
+	overflow-wrap: anywhere;
+}
+.telephone, .email, .adresse
+{
+	display: flex;
+	align-items: center;
+	
+}
+.ville
+{
+	padding-left: 50px;
+}
+.competences li
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.langues li
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+.jauge
+{
+	margin-right: 30px;
+	opacity: 0.7;
+}
+
+/* -------mise en page du bloc de compétences partie droite-------------*/
+ul
+{
+	list-style-type: none;
+	margin-left: 40px;
+
+}
+li strong
+{
+
+	text-shadow: 4px 4px 2px rgb(207,158,207);
+	text-align: left;
+	padding-top: 20px;
+	font-size: 1.2em;
+}
+h2
+{
+	display: flex;
+	align-items: center;
+	font-size: 2em;
+}
+h2 img
+{
+	margin-right: 10px;
+}
+
+#bloc_competences
+{
+	background: url("images/separateur.png")repeat-x bottom ,
+				url("images/separateur.png")repeat-x top ,
+				url("images/separateur_vertical.png")repeat-y right ,
+				url("images/separateur_vertical.png")repeat-y left ;
+	background-color: rgba(255,255,255,0.7);
+	border-radius: 10px;
+	padding: 20px;
+	font-size: 1.2em;
+	padding-left: 15px;
+	margin: 5px 5px 5px 0px;
+
+}
+#bloc_competences p
+{
+	text-align: left;
+	font-size: 1.1em;
+}
+
+/*-------------Gestion des medias queries---------------------------*/
+
+/*----- gestion des ecran 1200 px----------------------------*/
+@media all and (max-width: 1200px)
+{
+	 .nom 
+	{
+		/*color: red;*/
+		height: auto;
+	}
+	.photo_cv
+	{
+		margin-left: 80px;
+		margin-right: 5px;
+	}
+	header h1, header h2
+	{
+		height: 75px;
+		font-size: 1.8em;
+	}
+	section
+	{
+		width: auto;
+		font-size: 1em;
+		margin: 5px;
+	}
+	aside 
+	{
+		width: auto;
+		font-size: 1em;
+	}
+	aside li
+	{
+		font-size: 0.9em;
+	}
+	aside .titre_N1
+	{
+		font-size: 1.2em;
+	}
+	.jauge
+	{
+		margin-right: 5px;
+		width: 100px;
+		padding-right: 0px;
+	}
+	aside .titre_N1
+	{
+		font-size: 1.2em;
+	}
+	#bloc_competences
+	{
+		font-size: 1em;
+	}
+	#bloc_competences h2
+	{
+		font-size: 1.4em;
+	}
+	#bloc_competences li
+	{
+		font-size: 0.9em;
+	}
+	.email p
+	{
+		width: 15em;
+	}
+	.email a
+	{
+		overflow-wrap: anywhere ;
+	}
+	.email img, .telephone img,.adresse img
+	{
+		height: 25px;
+	}
+	.email , .telephone 
+	{
+		font-size: 0.9em;
+	}
+}
+/* ----------gestion ecran 1000 px--------------*/
+@media all and (max-width: 1000px)
+{
+		#page
+	{
+		width: auto;
+		margin: 0px;
+	}
+	header .nom
+	{
+		/*color: blue;*/
+		margin-left: 0px;
+		font-size: 1em;
+	}
+	.photo_cv 
+	{
+		margin-left: 70px;
+		margin-right: 50px;
+	}
+	header h1, header h2
+	{
+		height: 60px;
+	}
+	section
+	{
+		width: auto;
+		font-size: 1em;
+		margin: 5px;
+	}
+	aside 
+	{
+		width: auto;
+		font-size: 1em;
+	}
+	aside li
+	{
+		font-size: 0.9em;
+	}
+	.jauge
+	{
+		margin-right: 0px;
+		width: 75px;
+		padding-right: 0px;
+	}
+	#bloc_competences h2
+	{
+		font-size: 1.3em;
+	}
+	
+}
+/*----------Gesttion ecrans 602 px--------------------*/
+@media all and (max-width: 602px)
+{
+	#page
+	{
+		width: auto;
+		margin: 0px;
+	}
+	header .photo_cv 
+	{
+	
+		margin: 20px;
+	}
+	.photo_cv img
+	{
+		
+		height: 140px;
+	}
+	header h1, header h2
+	{
+		height: 50px;
+		font-size: 1.6em;
+		/*color: white;*/
+	}
+	section
+	{
+		display: flex;
+		flex-direction: column;
+		width: auto;
+		font-size: 0.8em;
+		margin: 5px;
+	}
+	aside 
+	{
+		max-width: 100%;
+		width: auto;
+		max-width: auto;
+		background-size: contain;
+		font-size: 1.2em;
+	}
+	aside .titre_N1
+	{
+		font-size: 1.1em;
+	}
+	aside li
+	{
+		font-size: 1em;
+	}
+	.jauge
+	{
+		width: 126px;
+		padding-right: 0px;
+	}
+	#bloc_competences
+	{
+		font-size: 1.2em;
+	}
+	#bloc_competences h2
+	{
+		font-size: 1.4em;
+	}
+	#bloc_competences li
+	{
+		font-size: 0.9em;
+	}
+}
